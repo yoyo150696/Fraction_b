@@ -37,11 +37,11 @@ Fraction::Fraction(){
 Fraction::~Fraction(){
 
 }
-Fraction::Fraction(Fraction&& other) noexcept{
+Fraction::Fraction(Fraction& other){
     numerator = other.numerator;
     denominator = other.denominator;
 }
-Fraction& Fraction::operator=(Fraction&& other) noexcept{
+Fraction& Fraction::operator=(Fraction& other){
     numerator = other.numerator;
     denominator = other.denominator;
     return *this;
