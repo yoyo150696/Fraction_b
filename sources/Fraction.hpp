@@ -16,8 +16,8 @@ class Fraction {
         Fraction(int numer, int denom);
         Fraction(float numnum);
         ~Fraction();
-        Fraction(Fraction&& other) noexcept;
-        Fraction& operator=(Fraction&& other) noexcept;
+        Fraction(Fraction& other);
+        Fraction& operator=(Fraction& other);
 
         // Operator overloading
 
